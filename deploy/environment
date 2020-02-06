@@ -1,0 +1,46 @@
+# --------------------------------------------------
+# basic configuration
+# --------------------------------------------------
+
+# the docker registry server to use 
+REGISTRY=docker-registry.intra.cape-it.de
+
+# the image tag to use for all application images
+IMAGE_TAG=dev
+
+# --------------------------------------------------
+# backend service configuration
+# --------------------------------------------------
+
+# the initial password of the 'admin' account (if empty, the default password is "Passw0rd")
+ADMIN_PW=start123
+
+# the port on the docker host system where the backend service is listening
+BACKEND_PORT=20000
+
+# database connection (see below)
+KIXDB_HOST=db			# only change this if you are connecting to an external DBMS
+KIXDB_DATABASE=kix
+KIXDB_USER=kix
+KIXDB_PASSWORD=kix
+KIXDB_DBMS=postgresql		# change this to "mysql" if you are connecting to a mysql/mariadb/percona server
+
+# --------------------------------------------------
+# frontend service configuration
+# --------------------------------------------------
+
+# the port on the docker host system where the frontend service is listening
+FRONTEND_PORT=20001
+
+# frontend logging = info
+LOG_LEVEL=2
+
+# --------------------------------------------------
+# DB service configuration
+# --------------------------------------------------
+
+# this initializes a database and user for the application
+# if you change this you need to change the connection configuration of the backend (see above) as well
+POSTGRES_DB=kix
+POSTGRES_USER=kix
+POSTGRES=PASSWORD=kix
