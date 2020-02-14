@@ -19,11 +19,15 @@ ADMIN_PW=start123
 BACKEND_PORT=20000
 
 # database connection (see below)
-KIXDB_HOST=db			# only change this if you are connecting to an external DBMS
+# only change this if you are connecting to an external DBMS
+KIXDB_HOST=db			
+
+# change this to "mysql" if you are connecting to a mysql/mariadb/percona server
+KIXDB_DBMS=postgresql		
+
 KIXDB_DATABASE=kix
 KIXDB_USER=kix
 KIXDB_PASSWORD=kix
-KIXDB_DBMS=postgresql		# change this to "mysql" if you are connecting to a mysql/mariadb/percona server
 
 # --------------------------------------------------
 # frontend service configuration

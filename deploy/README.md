@@ -18,12 +18,15 @@
 ## Stop KIX
 * execute `stop.sh`
 
+## Update to new version
+* execute `update.sh`
+
 ## Additional Information
 ### Persistent Data
 * the following services use volumes created on the first startup to store their persistent data
 ** frontend
 ** backend
 ** db
-* those volumes will be created in the docker volumes directory (usually /var/lib/docker/volumes)
-* if you want to change the location you have to change the volumes definition in the file `docker-compose.yml`
+* these volumes will be created in the docker volumes directory (usually /var/lib/docker/volumes)
+* if you want to change the location, you have to change the volumes definition in the file `docker-compose.yml`
 ** ATTENTION: please consult our support team if you do not exactly know what you are doing
