@@ -2,8 +2,8 @@
 # basic configuration
 # --------------------------------------------------
 
-# the docker registry server to use 
-REGISTRY=docker-registry.intra.cape-it.de
+# the docker registry to use 
+REGISTRY=docker-registry.kixdesk.com/public
 
 # the image tag to use for all application images
 IMAGE_TAG=dev
@@ -13,10 +13,11 @@ IMAGE_TAG=dev
 # --------------------------------------------------
 
 # the initial password of the 'admin' account (if empty, the default password is "Passw0rd")
-ADMIN_PW=start123
+ADMIN_PW=
 
 # the port on the docker host system where the backend service is listening
 BACKEND_PORT=20000
+BACKEND_PORT_SSL=20443
 
 # database connection (see below)
 # only change this if you are connecting to an external DBMS
@@ -35,6 +36,7 @@ KIXDB_PASSWORD=kix
 
 # the port on the docker host system where the frontend service is listening
 FRONTEND_PORT=20001
+FRONTEND_PORT_SSL=20444
 
 # frontend logging = info
 LOG_LEVEL=2
