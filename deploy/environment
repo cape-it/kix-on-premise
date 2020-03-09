@@ -49,4 +49,4 @@ LOG_LEVEL=2
 # if you change this you need to change the connection configuration of the backend (see above) as well
 POSTGRES_DB=kix
 POSTGRES_USER=kix
-POSTGRES=PASSWORD=kix
+POSTGRES_PASSWORD=kix
