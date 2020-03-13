@@ -38,7 +38,7 @@ KIXDB_PASSWORD=kix
 FRONTEND_PORT=20001
 FRONTEND_PORT_SSL=20444
 
-# frontend logging = info
+# frontend logging (0=ERROR, 1=WARNING, 2=INFO, 3=DEBUG)
 LOG_LEVEL=2
 
 # --------------------------------------------------
@@ -49,4 +49,4 @@ LOG_LEVEL=2
 # if you change this you need to change the connection configuration of the backend (see above) as well
 POSTGRES_DB=kix
 POSTGRES_USER=kix
-POSTGRES=PASSWORD=kix
+POSTGRES_PASSWORD=kix
