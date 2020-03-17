@@ -6,7 +6,7 @@
 REGISTRY=docker-registry.kixdesk.com/public
 
 # the image tag to use for all application images
-IMAGE_TAG=dev
+IMAGE_TAG=stable
 
 # --------------------------------------------------
 # backend service configuration
