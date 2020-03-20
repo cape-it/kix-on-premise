@@ -7,9 +7,10 @@
   - see https://docs.docker.com/compose/install/
 
 ## Get Docker Environment Configuration
-- clone this git-repo **OR**
+- create directory for your kix-on-premise installatio``
+  - `cd /opt && mkdir kix-on-premise && cd ./kix-on-premise`
 - download and unzip the initial docker environment setup
-  - `wget https://kixdes.com/downloads/kix/kix-on-premise.tar.gz`
+  - `wget https://download.kixdesk.com/kix-on-premise.tar.gz`
   - `tar -xf ./kix-on-premise.tar.gz`
 - change to extracted directory
   - `cd kix-on-premise`
@@ -19,23 +20,23 @@
 - basically only two config options are relevant for your specific installation
   - `BACKEND_PORT` (Default: 20000)
   - `FRONTEND_PORT` (Default: 20001)
--  **ATTENTION: do not change any configuration you do not know exactly what it does.**
+-  **ATTENTION: do not change any config setting unless you know exactly what it does.**
 
 ## Start KIX
 - change to extracted directory
-  - `cd /to/where/you/extracted/kix-on-premise`
+  - `cd /opt/kix-on-premise`
 - execute start script
  - `./start.sh`
 
 ## Stop KIX
 - change to extracted directory
-  - `cd /to/where/you/extracted/kix-on-premise`
+  - `cd /opt/kix-on-premise`
 - execute stop script
  - `./stop.sh`
 
 ## Update KIX
 - change to extracted directory
-  - `cd /to/where/you/extracted/kix-on-premise`
+  - `cd /opt/kix-on-premise`
 - execute update script
  - `./update.sh`
 
