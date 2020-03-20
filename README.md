@@ -20,6 +20,8 @@
 - basically only two config options are relevant for your specific installation
   - `BACKEND_PORT` (Default: 20000)
   - `FRONTEND_PORT` (Default: 20001)
+  - `BACKEND_PORT_SSL` (Default: 20443)
+  - `FRONTEND_PORT_SSL` (Default: 20444)
 -  **ATTENTION: do not change any config setting unless you know exactly what it does.**
 
 ## Start KIX
