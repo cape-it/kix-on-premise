@@ -4,4 +4,4 @@
 source ./environment
 export $(cut -d= -f1 ./environment | egrep '^[A-Z]')
 
-docker-compose -p kix down
+docker-compose -p ${NAME} down
