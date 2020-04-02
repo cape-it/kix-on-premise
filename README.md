@@ -22,7 +22,17 @@
   - `FRONTEND_PORT` (Default: 20001)
   - `BACKEND_PORT_SSL` (Default: 20443)
   - `FRONTEND_PORT_SSL` (Default: 20444)
--  **ATTENTION: do not change any config setting unless you know exactly what it does.**
+
+### SSL
+If you want to use SSL INSTEAD of non-SSL just do the following
+- comment out everything in `proxy/non-ssl.conf`
+- uncomment everything in `proxy/ssl.conf`
+- copy your certificate, key and ca-bundle into the directory `proxy/ssl/certs`
+- if you want to use SSL additionally to non-SSL please do the following
+  - uncomment everything in `proxy/ssl.conf`
+  - change the port setting in `proxy/ssl.conf` from `80` to `443` and from `8080` to `8443`
+  - copy your certificate, key and ca-bundle into the directory `proxy/ssl/certs`
+
 
 ## Start KIX
 - change to extracted directory
