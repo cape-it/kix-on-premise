@@ -44,6 +44,14 @@ FRONTEND_PORT_SSL=20444
 # frontend logging (0=ERROR, 1=WARNING, 2=INFO, 3=DEBUG)
 LOG_LEVEL=2
 
+# --------------------------------------------------------
+# Self Service Portal service configuration (if available)
+# --------------------------------------------------------
+
+# the port on the docker host system where the ssp service is listening
+SSP_PORT=20002
+SSP_PORT_SSL=20445
+
 # --------------------------------------------------
 # DB service configuration
 # --------------------------------------------------
