@@ -6,6 +6,10 @@
 - install Docker-Compose on your host system
   - see https://docs.docker.com/compose/install/
 
+### Minumum System requirements
+- Dual Core CPU
+- 4 GB RAM
+
 ## Get Docker Environment Configuration
 - create directory for your kix-on-premise installation
   - `cd /opt && mkdir kix-on-premise && cd ./kix-on-premise`
@@ -43,23 +47,36 @@ If you want to use SSL **additionally** to non-SSL please do the following
 - change to extracted directory
   - `cd /opt/kix-on-premise`
 - execute start script
- - `./start.sh`
+ - Linux: `./start.sh`
+ - Windows: `start.ps1`
 
 ## Stop KIX
 - change to extracted directory
   - `cd /opt/kix-on-premise`
 - execute stop script
- - `./stop.sh`
+ - Linux: `./stop.sh`
+ - Windows: `stop.ps1`
 
 ## Update KIX
 - change to extracted directory
   - `cd /opt/kix-on-premise`
 - execute update script
- - `./update.sh`
+ - Linux: `./update.sh`
+ - Windows: `update.ps1`
 
+## Accessing Stack Logs
+In case you need to monitor your stack, you can do so with the following script. All Information are printed to `STDOUT`.
+- change to extracted directory
+  - `cd /opt/kix-on-premise`
+- execute logging script
+ - Linux: `./logs.sh`
+ - Windows: `logs.ps1`
+
+To exit, just hit `Ctrl+C`
 
 # Data Persistence
 The following services use volumes created on the first startup to store their persistent data. These volumes will be created in the docker volumes directory (usually `/var/lib/docker/volumes`). If you want to change the location, you have to change the volumes definition in the file `docker-compose.yml`.
 - frontend
 - backend
 - db
+- shared
