@@ -1,4 +1,4 @@
-# How to Deploy KIX on-premise
+# How to Deploy KIX on-premise on Linux
 
 ## Prerequisites
 - Install Docker on your host system
@@ -6,7 +6,7 @@
 - install Docker-Compose on your host system
   - see https://docs.docker.com/compose/install/
 
-### Minumum System requirements
+### Minimal System Requirements
 - Dual Core CPU
 - 4 GB RAM
 
@@ -47,30 +47,26 @@ If you want to use SSL **additionally** to non-SSL please do the following
 - change to extracted directory
   - `cd /opt/kix-on-premise`
 - execute start script
- - Linux: `./start.sh`
- - Windows: `start.ps1`
+ - `./start.sh`
 
 ## Stop KIX
 - change to extracted directory
   - `cd /opt/kix-on-premise`
 - execute stop script
- - Linux: `./stop.sh`
- - Windows: `stop.ps1`
+ - `./stop.sh`
 
 ## Update KIX
 - change to extracted directory
   - `cd /opt/kix-on-premise`
 - execute update script
- - Linux: `./update.sh`
- - Windows: `update.ps1`
+ - `./update.sh`
 
 ## Accessing Stack Logs
 In case you need to monitor your stack, you can do so with the following script. All Information are printed to `STDOUT`.
 - change to extracted directory
   - `cd /opt/kix-on-premise`
 - execute logging script
- - Linux: `./logs.sh`
- - Windows: `logs.ps1`
+ - `./logs.sh`
 
 To exit, just hit `Ctrl+C`
 
