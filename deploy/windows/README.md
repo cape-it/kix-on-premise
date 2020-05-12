@@ -1,7 +1,7 @@
 # How to Deploy KIX on-premise on Windows
 
 ## Prerequisites
-- Install Docker on your host system
+- Install Docker Desktop on your host system
   - see https://docs.docker.com/install/
 - install Docker-Compose on your host system
   - Docker Desktop for Windows includes Docker-Compose.
