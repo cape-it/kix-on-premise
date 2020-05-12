@@ -4,4 +4,4 @@
 source ./environment
 export $(cut -d= -f1 ./environment | egrep '^[A-Z]')
 
-docker-compose logs --follow 
+docker-compose -p ${NAME} --follow

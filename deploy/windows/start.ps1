@@ -2,4 +2,4 @@
     Set-Item -path "env:$($_.split('=')[0])" -value $_.split('=')[1] -Force;
 }
 
-docker-compose -p kix up -d
+docker-compose -p $env:NAME up -d
