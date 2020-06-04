@@ -16,7 +16,7 @@ NAME=kix
 # --------------------------------------------------
 
 # the initial password of the 'admin' account (if empty, the default password is "Passw0rd")
-ADMIN_PW=
+INITIAL_ADMIN_PW=
 
 # the port on the docker host system where the backend service is listening
 BACKEND_PORT=20000
