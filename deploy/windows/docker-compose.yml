@@ -75,7 +75,7 @@ services:
         max-size: "100m"
 
   db:
-    image: postgres:12-alpine
+    image: ${REGISTRY}/db:${IMAGE_TAG}
     hostname: db
     env_file: 
       - environment
