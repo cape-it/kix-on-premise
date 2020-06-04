@@ -54,6 +54,12 @@ If you want to use SSL **additionally** to non-SSL please do the following
 - execute update script
  - `update.ps1`
 
+## Restart Services
+- execute restart script without any parameter to restart all services
+ - `restart.ps1`
+- execute restart script with the desired service to restart
+ - `restart.ps1 backend`
+
 ## Accessing Stack Logs
 In case you need to monitor your stack, you can do so with the following script. All Information are printed to `STDOUT`.
 - execute logging script

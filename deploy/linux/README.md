@@ -61,6 +61,13 @@ If you want to use SSL **additionally** to non-SSL please do the following
 - execute update script
  - `./update.sh`
 
+## Restart Services
+- execute restart script without any parameter to restart all services
+ - `./restart.sh`
+- execute restart script with the desired service to restart
+ - `./restart.sh backend`
+
+
 ## Accessing Stack Logs
 In case you need to monitor your stack, you can do so with the following script. All Information are printed to `STDOUT`.
 - change to extracted directory
